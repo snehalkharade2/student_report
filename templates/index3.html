@@ -7,7 +7,7 @@
 </head>    
 <style>
     body{
-        background-image: url("https://blog.edmentum.com/sites/blog.edmentum.com/files/styles/blog_image/public/images/CTEDropoutPrevention.jpg?itok=CnIldypn");
+        background-image: url("https://edsurge.imgix.net/uploads/post/image/10210/shutterstock_363589958-1504895674.jpg?auto=compress%2Cformat&w=1080&h=437&fit=crop");
         background-repeat: no-repeat;
         background-attachment: fixed; background-size: cover;
         }
@@ -18,8 +18,12 @@
     <h1>Prediction Student Progress </h1>
     <form method = "POST" action = "/student_progress">
 
-        <label> Marital_status : </label>
-        <input type = "text" name = "Marital_status">
+        <label> Marital_status :</label>
+        <select name = "Marital_status">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
         </select>
           
         
@@ -32,13 +36,21 @@
         
         <br>
         <br>
-        <label> Application_order : </label>
-        <input type = "text" name = "Application_order">
+        <label> Application_order :</label>
+        <select name = "Application_order">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
         </select>
-        
-        
+
+
         <br>
         <br>
+
         <label> Course : </label>
         <input type = "text" name = "Course">
         </select>
@@ -95,8 +107,10 @@
         
         <br>
         <br>
-        <label> Displaced : </label>
-        <input type = "text" name = "Displaced">
+        <label> Displaced :</label>
+        <select name = "Displaced">
+            <option value="0">0</option>
+            <option value="1">1</option>
         </select>
         
         
@@ -123,16 +137,21 @@
         
         <br>
         <br>
-        <label> Gender : </label>
-        <input type = "text" name = "Gender">
+        <label> Gender :</label>
+        <select name = "Gender">
+            <option value="0">0</option>
+            <option value="1">1</option>
         </select>
         
         
         <br>
         <br>
-        <label> Scholarship_holder : </label>
-        <input type = "text" name = "Scholarship_holder">
+        <label> Scholarship :</label>
+        <select name = "Scholarship">
+            <option value="0">0</option>
+            <option value="1">1</option>
         </select>
+        
         
         
         <br>
@@ -144,8 +163,10 @@
         
         <br>
         <br>
-        <label> International : </label>
-        <input type = "text" name = "International">
+        <label> International :</label>
+        <select name = "International">
+            <option value="0">0</option>
+            <option value="1">1</option>
         </select>
         
         
