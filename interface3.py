@@ -32,7 +32,7 @@ def student_progress():
             Debtor = eval(data("Debtor"))
             Tuition_fees = eval(data("Tuition_fees"))
             Gender = int(data("Gender"))
-            Scholarship_holder = eval(data("Scholarship_holder"))
+            Scholarship_holder = int(data("Scholarship_holder"))
             Age_at_enrollment = eval(data("Age_at_enrollment"))
             International = eval(data("International"))
             Curricular_units_1st_sem_credited = eval(data("Curricular_units_1st_sem_credited"))
