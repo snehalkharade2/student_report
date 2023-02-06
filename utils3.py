@@ -43,8 +43,8 @@ class Student_Success():
     def __load_model(self):
 
         with open(config3.LOGISTIC_FILE_PATH, "rb") as f:
-            self.log_model = pickle.load(f)
-            print("Logistic Model ::", self.log_model)
+            self.log_reg = pickle.load(f)
+            print("Logistic Model ::", self.log_reg)
 
         with open(config3.JSON_FILE_PATH, "r") as f:
             self.project_data = json.load(f)
@@ -53,7 +53,7 @@ class Student_Success():
         
     def get_student_prediction(self):
         self.__load_model()
-        test_array = np.zeros((1,self.log_model.n_features_in_))
+        test_array = np.zeros((1,self.log_reg.n_features_in_))
         test_array[0][0] = self.Marital_status
         test_array[0][1] = self.Application_mode
         test_array[0][2] = self.Application_order
@@ -90,7 +90,7 @@ class Student_Success():
 
         print("Test Array", test_array)
 
-        progress_predict = self.log_model.predict(test_array)[0]
+        progress_predict = self.log_reg.predict(test_array)[0]
 
         print("Progress of Student ::",progress_predict)
 
