@@ -42,11 +42,11 @@ class Student_Success():
 
     def __load_model(self):
 
-        with open(config3.LOGISTIC_FILE_PATH, "rb") as f:
+        with open(r"artifacts\logistic_reg.pkl", "rb") as f:
             self.log_reg = pickle.load(f)
             print("Logistic Model ::", self.log_reg)
 
-        with open(config3.JSON_FILE_PATH, "r") as f:
+        with open(r"artifacts\project_data.json", "r") as f:
             self.project_data = json.load(f)
             print("Project Data ::",self.project_data)
 
