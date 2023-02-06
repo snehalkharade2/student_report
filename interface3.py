@@ -111,7 +111,7 @@ def student_progress():
         return jsonify({"Message" : "Unsuccessful"}) 
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = config3.PORT_NUMBER, debug = False)
+    app.run(host = "0.0.0.0", port = config3.PORT_NUMBER)
 
 
           
