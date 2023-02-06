@@ -42,7 +42,7 @@ class Student_Success():
 
     def __load_model(self):
 
-        with open(r"artifacts\logistic_reg.pkl", "rb") as f:
+        with open(r"artifacts\logistic_regression.pkl", "rb") as f:
             self.log_reg = pickle.load(f)
             print("Logistic Model ::", self.log_reg)
 
